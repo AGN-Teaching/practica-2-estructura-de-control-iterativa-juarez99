@@ -1,5 +1,5 @@
 # Plantilla cifrar.py
-# cifrado.py
+
 import random  # Importamos librería random para generar números aleatorios
 
 def cifrar_mensaje(mensaje):
@@ -13,8 +13,8 @@ def cifrar_mensaje(mensaje):
     alfabeto_mayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     alfabeto_minusculas = "abcdefghijklmnopqrstuvwxyz"
 
-    # Iteramos sobre cada carácter del mensaje
-    for char in mensaje:
+    # Analizamos cada letra del mensaje
+    for char in mensaje:  # Se añade un bucle para recorrer cada carácter del mensaje
         if char.isupper():  # Si es una letra mayúscula
             index = alfabeto_mayusculas.index(char)  # Obtenemos su índice en el alfabeto
             mensaje_cifrado += alfabeto_mayusculas[(index + k) % 26]  # Aplicamos el desplazamiento
