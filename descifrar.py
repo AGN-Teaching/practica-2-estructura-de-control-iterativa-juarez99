@@ -1,5 +1,4 @@
 # Plantilla descifrar.py
-# descifrado.py
 
 def descifrar_mensaje(mensaje_cifrado, k):
     """
@@ -11,7 +10,7 @@ def descifrar_mensaje(mensaje_cifrado, k):
     alfabeto_mayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     alfabeto_minusculas = "abcdefghijklmnopqrstuvwxyz"
 
-    # Iteramos sobre cada carácter del mensaje cifrado
+    # Analizamos cada letra del mensaje
     for char in mensaje_cifrado:
         if char.isupper():  # Si es una letra mayúscula
             index = alfabeto_mayusculas.index(char)  # Obtenemos su índice en el alfabeto
